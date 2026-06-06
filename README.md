@@ -43,12 +43,19 @@ python main.py
 
 ## Project Structure
 
-hand-gesture-racer/
-├── java-game/        # JavaFX game engine
-│   ├── src/
-│   └── pom.xml
-└── python-ai/        # Hand gesture detection
-    ├── main.py
-    ├── hand_detector.py
-    ├── gesture_recognizer.py
-    └── socket_client.py
+    hand-gesture-racer/
+    ├── java-game/              # JavaFX game engine
+    │   ├── src/
+    │   │   └── main/java/com/racer/
+    │   │       ├── Main.java
+    │   │       ├── GameController.java
+    │   │       ├── SocketServer.java
+    │   │       ├── PlayerCar.java
+    │   │       ├── EnemyCar.java
+    │   │       └── Road.java
+    │   └── pom.xml
+    └── python-ai/              # Hand gesture detection
+        ├── main.py
+        ├── hand_detector.py
+        ├── gesture_recognizer.py
+        └── socket_client.py
