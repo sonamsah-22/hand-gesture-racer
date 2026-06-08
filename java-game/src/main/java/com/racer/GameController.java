@@ -81,6 +81,7 @@ public class GameController {
 
         for (EnemyCar e : enemies) e.setSpeedMultiplier(currentRoadSpeed / baseSpeed);
 
+        player.setSpeedRatio(currentRoadSpeed / baseSpeed);
         player.update();
         road.update();
         score++;
